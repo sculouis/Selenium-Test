@@ -8,6 +8,7 @@ workbook.xlsx.readFile("sample.xlsx").then(function () {
         includeEmpty: true
     }, function (row, rowNumber) {
         currRow = workSheet.getRow(rowNumber);
+        console.log(`===== 第:${rowNumber}列========`);
         console.log("User Name :" + currRow.getCell(1).value + ", Password :" + currRow.getCell(2).value);
         console.log("User Name :" + row.values[1] + ", Password :" + row.values[2]);
     })
