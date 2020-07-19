@@ -24,4 +24,4 @@ async function example() {
     await result.sendKeys('03');
 
 }
-example();
+module.exports = example;
